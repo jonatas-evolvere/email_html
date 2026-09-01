@@ -1,164 +1,190 @@
 <!-- ============================================================
-     ASSINATURA E-MAIL — JONATAS SANTOS
+     ASSINATURA E-MAIL v2 — JONATAS SANTOS
      Evolvere Consultoria e Desenvolvimento
-
-     ANTES DE USAR: substitua as URLs abaixo pelas URLs definitivas
-     das imagens hospedadas publicamente (site, GitHub Pages, etc.)
-
-     https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/evolvere-logo-colorida.png  → imagem da logomarca colorida (fundo transp.)
-     https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/evolvere-logo-branca.png    → imagem da logomarca branca (fundo transp.)
-     https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/foto-jonatas.png   → foto de perfil de Jonatas (320x320px)
-
-     Largura final: 560px. Cole apenas este bloco no campo
-     "Assinatura → Código-fonte" do Webmail Hostinger.
-
-     EFEITOS:
-     - box-shadow: profundidade no card (Apple Mail, webmails, iOS Mail)
-     - :hover nos chips + site: inversão navy/laranja ao passar o mouse
-       (funciona em Apple Mail, Thunderbird e webmails; ignorado silenciosamente
-        em Gmail e Outlook — sem quebrar layout)
-     - transition: suaviza o hover em clientes compatíveis
+     Cole no campo "Assinatura → Código-fonte" do Webmail Hostinger.
+     600 px · gradientes · hover · @media mobile
      ============================================================ -->
 
 <style>
-.ev-chip {
-  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
-}
-.ev-chip:hover {
-  background-color: #0F0F50 !important;
-  border-color: #0F0F50 !important;
-  color: #FFFFFF !important;
-}
-.ev-site {
-  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
-}
-.ev-site:hover {
-  background-color: #FF6B00 !important;
-  border-color: #FF6B00 !important;
-  color: #FFFFFF !important;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+.ev-link { transition: color 0.22s ease; }
+.ev-link:hover { color: #FF6B00 !important; }
+@media only screen and (max-width: 520px) {
+  table.ev-main  { width: 100% !important; }
+  td.ev-left     { display: block !important; width: 100% !important; }
+  td.ev-right    { display: block !important; width: 100% !important; padding: 18px 18px 16px !important; }
+  img.ev-photo   { width: 100% !important; height: auto !important; }
+  svg.ev-deco    { width: 100% !important; }
 }
 </style>
 
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="560" bgcolor="#FFFFFF"
-  style="border-collapse:collapse;width:560px;background-color:#FFFFFF;font-family:'Poppins',Helvetica,Arial,sans-serif;box-shadow:0 4px 24px rgba(15,15,80,0.12);">
+<table role="presentation" class="ev-main" cellpadding="0" cellspacing="0" border="0" width="600" bgcolor="#FFFFFF"
+  style="border-collapse:collapse;width:600px;max-width:600px;font-family:'Poppins',Helvetica,Arial,sans-serif;box-shadow:0 8px 40px rgba(15,15,80,0.16);">
 
-  <!-- FAIXA TOPO: laranja -->
+  <!-- ─── TOP BAR: laranja → âmbar ─── -->
   <tr>
-    <td height="3" bgcolor="#FF6B00" style="font-size:0;line-height:0;background-color:#FF6B00;mso-line-height-rule:exactly;">&nbsp;</td>
+    <td colspan="2" height="4" bgcolor="#FF6B00"
+        style="font-size:0;line-height:0;mso-line-height-rule:exactly;background-color:#FF6B00;background:linear-gradient(90deg,#FF6B00 0%,#FFA54D 100%);">&nbsp;</td>
   </tr>
 
-  <!-- CABEÇALHO: logo colorida + tag do site -->
+  <!-- ─── CORPO PRINCIPAL ─── -->
   <tr>
-    <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:16px 24px 14px 24px;">
+
+    <!-- COLUNA ESQUERDA: navy degradê -->
+    <td class="ev-left" width="210" bgcolor="#0F0F50" valign="top"
+        style="width:210px;vertical-align:top;background-color:#0F0F50;background:linear-gradient(170deg,#0F0F50 0%,#1A1A66 52%,#23236B 100%);">
+
+      <!-- Logo branca -->
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
-          <td style="vertical-align:middle;">
-            <img src="https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/evolvere-logo-colorida.png" width="148" height="40" border="0" alt="Evolvere Consultoria e Desenvolvimento"
-                 style="display:block;border:0;height:40px;width:148px;max-width:148px;" />
+          <td align="center" style="padding:22px 12px 0 12px;">
+            <img src="https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/evolvere-logo-branca.png"
+                 width="128" height="35" border="0" alt="Evolvere"
+                 style="display:block;border:0;width:128px;height:35px;" />
           </td>
-          <td style="vertical-align:middle;text-align:right;">
-            <a href="https://evolvereconsultoria.com.br" class="ev-site"
-               style="display:inline-block;padding:5px 14px;background-color:#F4F5FB;border:1px solid #D8D8F0;border-radius:20px;font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9px;font-weight:400;color:#5A5A72;text-decoration:none;letter-spacing:0.04em;white-space:nowrap;">evolvereconsultoria.com.br</a>
+        </tr>
+      </table>
+
+      <!-- Arcos decorativos SVG -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td style="padding:0;font-size:0;line-height:0;">
+            <svg class="ev-deco" width="210" height="92" viewBox="0 0 210 92" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+              <circle cx="210" cy="92" r="52"  fill="none" stroke="#FF6B00" stroke-width="1.5" opacity="0.38"/>
+              <circle cx="210" cy="92" r="80"  fill="none" stroke="#FFA54D" stroke-width="1.2" opacity="0.22"/>
+              <circle cx="210" cy="92" r="108" fill="none" stroke="#FFD099" stroke-width="0.8" opacity="0.13"/>
+              <circle cx="168" cy="29" r="2.5" fill="#FF6B00"  opacity="0.50"/>
+              <circle cx="38"  cy="75" r="1.8" fill="#FFA54D"  opacity="0.35"/>
+              <circle cx="85"  cy="12" r="1.2" fill="#FFD099"  opacity="0.25"/>
+            </svg>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Foto -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td style="font-size:0;line-height:0;padding:0;">
+            <img src="https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/foto-jonatas.png"
+                 class="ev-photo" width="210" height="168" border="0" alt="Jonatas Santos"
+                 style="display:block;border:0;width:210px;height:168px;object-fit:cover;object-position:center top;" />
+          </td>
+        </tr>
+      </table>
+
+    </td><!-- /COLUNA ESQUERDA -->
+
+    <!-- COLUNA DIREITA: branco → lavanda suave -->
+    <td class="ev-right" valign="top"
+        style="vertical-align:top;background-color:#FFFFFF;background:linear-gradient(148deg,#FFFFFF 0%,#F5F5FB 100%);padding:28px 26px 24px 26px;">
+
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+
+        <!-- Nome -->
+        <tr>
+          <td style="font-family:'DM Serif Display',Georgia,'Times New Roman',serif;font-size:27px;font-weight:400;color:#0F0F50;line-height:1.1;padding-bottom:9px;">
+            Jonatas Santos
+          </td>
+        </tr>
+
+        <!-- Badge de cargo: gradiente laranja -->
+        <tr>
+          <td style="padding-bottom:5px;">
+            <span style="display:inline-block;background-color:#FF6B00;background:linear-gradient(90deg,#FF6B00 0%,#FFA54D 100%);border-radius:3px;padding:4px 13px;font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:8.5px;font-weight:600;color:#FFFFFF;text-transform:uppercase;letter-spacing:0.09em;white-space:nowrap;">Analista de Negócios</span>
+          </td>
+        </tr>
+
+        <!-- Subtítulo -->
+        <tr>
+          <td style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:8.5px;font-weight:400;color:#9B9BB8;letter-spacing:0.03em;padding-bottom:5px;">
+            Mestre em Comunicação
+          </td>
+        </tr>
+
+        <!-- Empresa -->
+        <tr>
+          <td style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9.5px;font-weight:500;color:#5A5A72;padding-bottom:15px;">
+            Evolvere Consultoria e Desenvolvimento
+          </td>
+        </tr>
+
+        <!-- Divisor degradê laranja → transparente -->
+        <tr>
+          <td height="2" bgcolor="#FF6B00"
+              style="height:2px;font-size:0;line-height:0;mso-line-height-rule:exactly;background-color:#FF6B00;background:linear-gradient(90deg,#FF6B00 0%,rgba(255,165,77,0.45) 50%,rgba(255,165,77,0) 100%);">&nbsp;</td>
+        </tr>
+
+        <!-- Espaço pós-divisor -->
+        <tr><td height="13" style="height:13px;font-size:0;line-height:0;">&nbsp;</td></tr>
+
+        <!-- WhatsApp -->
+        <tr>
+          <td style="padding-bottom:7px;">
+            <a href="https://wa.me/5565996863712" class="ev-link"
+               style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9.5px;font-weight:400;color:#23233F;text-decoration:none;line-height:1.4;display:inline-block;">
+              <span style="color:#FF6B00;font-size:10px;">&#9679;</span>&ensp;65 9 9686-3712
+            </a>
+          </td>
+        </tr>
+
+        <!-- Instagram -->
+        <tr>
+          <td style="padding-bottom:7px;">
+            <a href="https://www.instagram.com/evolvere_consultoria" class="ev-link"
+               style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9.5px;font-weight:400;color:#23233F;text-decoration:none;line-height:1.4;display:inline-block;">
+              <span style="color:#FFA54D;font-size:10px;">&#9679;</span>&ensp;@evolvere_consultoria
+            </a>
+          </td>
+        </tr>
+
+        <!-- LinkedIn -->
+        <tr>
+          <td style="padding-bottom:18px;">
+            <a href="https://www.linkedin.com/in/jonatas-rodrigues-santos" class="ev-link"
+               style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9.5px;font-weight:400;color:#23233F;text-decoration:none;line-height:1.4;display:inline-block;">
+              <span style="color:#3A3A8C;font-size:10px;">&#9679;</span>&ensp;LinkedIn
+            </a>
+          </td>
+        </tr>
+
+        <!-- Site -->
+        <tr>
+          <td>
+            <a href="https://evolvereconsultoria.com.br" class="ev-link"
+               style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:8.5px;font-weight:400;color:#9B9BB8;text-decoration:none;letter-spacing:0.04em;line-height:1.4;display:inline-block;">
+              <span style="color:#D8D8F0;font-size:10px;">&#9679;</span>&ensp;evolvereconsultoria.com.br
+            </a>
+          </td>
+        </tr>
+
+      </table>
+    </td><!-- /COLUNA DIREITA -->
+
+  </tr>
+
+  <!-- ─── RODAPÉ: navy degradê ─── -->
+  <tr>
+    <td colspan="2" bgcolor="#0F0F50"
+        style="background-color:#0F0F50;background:linear-gradient(90deg,#0F0F50 0%,#1A1A66 100%);padding:11px 22px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td valign="middle" style="vertical-align:middle;">
+            <span style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:7.5px;font-weight:300;color:#9B9BB8;font-style:italic;line-height:1.5;">&ldquo;Conectando neg&#243;cios, ideias e pessoas a resultados extraordin&#225;rios.&rdquo;</span>
+          </td>
+          <td valign="middle" style="vertical-align:middle;text-align:right;padding-left:12px;white-space:nowrap;">
+            <img src="https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/evolvere-logo-branca.png"
+                 width="96" height="26" border="0" alt="Evolvere"
+                 style="display:block;border:0;width:96px;height:26px;" />
           </td>
         </tr>
       </table>
     </td>
   </tr>
 
-  <!-- DIVISOR LILÁS -->
+  <!-- ─── BARRA INFERIOR: âmbar → laranja ─── -->
   <tr>
-    <td height="1" bgcolor="#D8D8F0" style="font-size:0;line-height:0;background-color:#D8D8F0;mso-line-height-rule:exactly;">&nbsp;</td>
-  </tr>
-
-  <!-- CORPO: foto + informações -->
-  <tr>
-    <td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:22px 24px 18px 24px;">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-        <tr>
-
-          <!-- COLUNA FOTO -->
-          <td width="100" style="vertical-align:top;padding-right:20px;width:100px;">
-            <img src="https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/foto-jonatas.png" width="80" height="80" border="0" alt="Jonatas Santos"
-                 style="display:block;border:2px solid #1A1A66;border-radius:4px;width:80px;height:80px;" />
-          </td>
-
-          <!-- COLUNA INFORMAÇÕES -->
-          <td style="vertical-align:top;">
-
-            <!-- Bloco nome + cargo: barra lateral laranja -->
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-              <tr>
-                <td width="3" bgcolor="#FF6B00" style="background-color:#FF6B00;width:3px;font-size:0;">&nbsp;</td>
-                <td style="padding-left:10px;vertical-align:top;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td style="font-family:'DM Serif Display',Georgia,serif;font-size:21px;font-weight:400;color:#0F0F50;line-height:1.15;padding-bottom:4px;">Jonatas Santos</td>
-                    </tr>
-                    <tr>
-                      <td style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9.5px;font-weight:600;color:#FF6B00;letter-spacing:0.06em;text-transform:uppercase;line-height:1.3;padding-bottom:2px;">Analista de Neg&#243;cios &amp; Mestre em Comunica&#231;&#227;o</td>
-                    </tr>
-                    <tr>
-                      <td style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9.5px;font-weight:500;color:#5A5A72;line-height:1.3;">Evolvere Consultoria e Desenvolvimento</td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-
-            <!-- Divisor interno lilás -->
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:14px;margin-bottom:12px;">
-              <tr>
-                <td height="1" bgcolor="#D8D8F0" style="font-size:0;line-height:0;background-color:#D8D8F0;mso-line-height-rule:exactly;">&nbsp;</td>
-              </tr>
-            </table>
-
-            <!-- Chips de contato -->
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <!-- WhatsApp -->
-                <td style="padding-right:6px;">
-                  <a href="https://wa.me/5565996863712" class="ev-chip"
-                     style="display:inline-block;padding:5px 11px;background-color:#F4F5FB;border:1px solid #D8D8F0;border-radius:20px;font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9px;font-weight:500;color:#23233F;text-decoration:none;white-space:nowrap;line-height:1.4;"><span style="color:#FF6B00;font-size:8px;">&#9679;</span>&nbsp;65 9 9686-3712</a>
-                </td>
-                <!-- Instagram -->
-                <td style="padding-right:6px;">
-                  <a href="https://www.instagram.com/evolvere_consultoria" class="ev-chip"
-                     style="display:inline-block;padding:5px 11px;background-color:#F4F5FB;border:1px solid #D8D8F0;border-radius:20px;font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9px;font-weight:500;color:#23233F;text-decoration:none;white-space:nowrap;line-height:1.4;"><span style="color:#FFA54D;font-size:8px;">&#9679;</span>&nbsp;@evolvere_consultoria</a>
-                </td>
-                <!-- LinkedIn -->
-                <td>
-                  <a href="https://www.linkedin.com/in/jonatas-rodrigues-santos" class="ev-chip"
-                     style="display:inline-block;padding:5px 11px;background-color:#F4F5FB;border:1px solid #D8D8F0;border-radius:20px;font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:9px;font-weight:500;color:#23233F;text-decoration:none;white-space:nowrap;line-height:1.4;"><span style="color:#3A3A8C;font-size:8px;">&#9679;</span>&nbsp;LinkedIn</a>
-                </td>
-              </tr>
-            </table>
-
-          </td><!-- /COLUNA INFORMAÇÕES -->
-        </tr>
-      </table>
-    </td>
-  </tr>
-
-  <!-- RODAPÉ NAVY: slogan + logo branca -->
-  <tr>
-    <td bgcolor="#0F0F50" style="background-color:#0F0F50;padding:13px 24px;">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-        <tr>
-          <td style="vertical-align:middle;">
-            <span style="font-family:'Poppins',Helvetica,Arial,sans-serif;font-size:8.5px;font-weight:300;color:#9B9BB8;font-style:italic;line-height:1.5;">&ldquo;Conectando neg&#243;cios, ideias e pessoas a resultados extraordin&#225;rios.&rdquo;</span>
-          </td>
-          <td style="vertical-align:middle;text-align:right;padding-left:20px;white-space:nowrap;">
-            <img src="https://cdn.jsdelivr.net/gh/jonatas-evolvere/email_html@main/assets/evolvere-logo-branca.png" width="104" height="28" border="0" alt="Evolvere"
-                 style="display:block;border:0;width:104px;height:28px;" />
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-
-  <!-- FAIXA BASE: âmbar -->
-  <tr>
-    <td height="2" bgcolor="#FFA54D" style="font-size:0;line-height:0;background-color:#FFA54D;mso-line-height-rule:exactly;">&nbsp;</td>
+    <td colspan="2" height="3" bgcolor="#FFA54D"
+        style="font-size:0;line-height:0;mso-line-height-rule:exactly;background-color:#FFA54D;background:linear-gradient(90deg,#FFA54D 0%,#FF6B00 100%);">&nbsp;</td>
   </tr>
 
 </table>
