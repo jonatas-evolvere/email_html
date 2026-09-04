@@ -1,0 +1,36 @@
+{
+  "empresa": "Evolvere Consultoria",
+  "localizacao": "Cuiabá | Mato Grosso | Brasil",
+  "site": "https://evolvereconsultoria.com.br",
+  "instagram": "https://www.instagram.com/evolvere_consultoria",
+  "emails_pessoais": null,
+  "emails_pessoais_observacao": "Omitidos intencionalmente",
+  "identidade": {
+    "navy": "#0F0F50",
+    "laranja": "#FF6B00",
+    "logo_principal": "assets/evolvere-logo-branca-email.png",
+    "fundo_logo": "#0F0F50"
+  },
+  "pessoas": [
+    {
+      "nome": "Igor Henrique",
+      "cargo": "CEO e Diretor de Projetos",
+      "qualificacao_secundaria": null,
+      "telefone_exibicao": "65 9 9208-8256",
+      "whatsapp": "https://wa.me/5565992088256",
+      "linkedin": "https://www.linkedin.com/in/igor-henrique-rodrigues-b998a274",
+      "foto": "assets/foto-igor-email.jpg",
+      "assinatura": "assinatura_igor.html"
+    },
+    {
+      "nome": "Jonatas Santos",
+      "cargo": "Diretor de Negócios",
+      "qualificacao_secundaria": "Mestre em Comunicação",
+      "telefone_exibicao": "65 9 9686-3712",
+      "whatsapp": "https://wa.me/5565996863712",
+      "linkedin": "https://www.linkedin.com/in/jonatas-rodrigues-santos",
+      "foto": "assets/foto-jonatas-email.jpg",
+      "assinatura": "assinatura_jonatas.html"
+    }
+  ]
+}
